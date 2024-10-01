@@ -1,0 +1,256 @@
+
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    }
+    ::selection {
+    color: var(--white);
+    background-color: var(--mid-orange);
+    }
+    .text-gradient::selection, .text-gradient-two::selection {
+    background-color: var(--mid-orange);
+    -webkit-text-fill-color: var(--white);
+    -webkit-background-clip: inherit;
+    background-clip: inherit;
+    }
+    .scroll-disable {
+    overflow: hidden;
+    }
+    .hl-purple {
+    color: var(--purple);
+    }
+    .hl-orange {
+    color: var(--orange);
+    }
+    .hl-green {
+    color: var(--green);
+    }
+    .recorder-tablink.w--current svg path {
+    fill: var(--off-white);
+    stroke: var(--black);
+    }
+    .card-thumbimg:hover ~ .card-details .card-box .card-title {
+    text-decoration: underline;
+    }
+    .card-box .p-lite {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    }
+    /****** Code Editor Css  *******/
+    .recorder-tabdetail:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 40px;
+    background: rgba(255,255,255,0.06);
+    }
+    pre, code {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    overflow: hidden;
+    }
+    pre {
+    counter-reset: line 0;
+    padding-left: 30px;
+    }
+    pre span {
+    counter-increment: line;
+    }
+    pre span::before {
+    content: counter(line) ' ';
+    color: rgba(255,255,255,0.3);
+    position: absolute;
+    left: 16px;
+    }
+    pre code label {
+    display: inline-block;
+    margin: 0;
+    font-weight: 400;
+    }
+    .copycode-icon > img {
+    opacity: 0.4;
+    transition: opacity .3s ease-in-out;
+    }
+    .copycode-icon:hover > img {
+    opacity: 1;
+    }
+    .copycode-icon:after {
+    content: '';
+    right: 24px;
+    position: absolute;
+    z-index: 3;
+    top: -2px;
+    width: auto;
+    height: auto;
+    color: var(--white);
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    background: rgba(255,255,255,.10);
+    border-radius: 4px;
+    transition: right .3s ease-in-out;
+    opacity: 0;
+    }
+    .copycode-icon.tooltipbox:after {
+    content: 'Copied';
+    right: 34px;
+    padding: 6px 10px;
+    opacity: 1;
+    }
+    .post-card .card-line {
+    background:
+    linear-gradient(90deg, rgba(0, 0, 0, 1) 50%, transparent 0) repeat-x,
+    linear-gradient(90deg, rgba(0, 0, 0, 1) 50%, transparent 0) repeat-x,
+    linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, transparent 0) repeat-y,
+    linear-gradient(0deg, rgba(0, 0, 0, 1) 50%, transparent 0) repeat-y;
+    background-size: 0 0, 5px 1px, 0 0, 0 0;
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    }
+    .post-card .card-line.rightline {
+    background-size: 0 0, 0 0, 1px 5px, 0 0;
+    }
+    .post-card:hover .card-line {
+    animation: cardBorder .15s infinite linear;
+    }
+    .faq-details > p {
+    margin-bottom: 20px;
+    }
+    .faq-details a {
+    color: var(--white);
+    }
+    .faq-details a:hover {
+    text-decoration: none;
+    }
+    .client-testimonial-item:hover .client-review-box {
+    border-bottom-style: solid;
+    }
+    /****** Policy Page Css  *******/
+    .policy-richtext {
+    font-size: var(--body-lg);
+    line-height: 32px;
+    }
+    .policy-richtext h1, .policy-richtext h2, .policy-richtext h3, .policy-richtext h4 {
+    display: inline-block;
+    width: 100%;
+    }
+    .policy-richtext h1, .policy-richtext h2 {
+    font-family: var(--pp-neue-machina);
+    font-size: var(--subheading-3);
+    font-weight: 300;
+    line-height: 48px;
+    margin: 20px 0 24px 0;
+    }
+    .policy-richtext h3 {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 400;
+    margin: 10px 0 24px 0;
+    }
+    .policy-richtext h4 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    }
+    .policy-richtext p {
+    margin: 0 0 30px 0;
+    }
+    .policy-richtext ul, .policy-richtext ol {
+    padding-left: 30px;
+    margin: 0 0 40px 0;
+    }
+    .policy-richtext a {
+    color: var(--black);
+    }
+    .policy-richtext a:hover {
+    text-decoration: none;
+    }
+    @keyframes cardBorder {
+    100% {
+    background-position: 4px 0, 4px 100%, 0 4px, 100% 4px;
+    }
+    }
+    /****** Media Query Css  *******/
+    @media screen and (min-width: 992px) and (max-width: 1280px) {
+    .nav-menulist {
+    grid-column-gap: 35px;
+    }
+    .dashboard-main {
+    padding-left: 155px;
+    }
+    .testimonials-box {
+    padding-right: 40px;
+    }
+    .texture-box {
+    margin-right: -150px;
+    }
+    .linebox {
+    left: -33px;
+    }
+    }
+    @media screen and (max-width: 992px) {
+    .w-nav[data-collapse="medium"] .w-nav-button, .w-nav-overlay [data-nav-menu-open] {
+    display: flex !important;
+    }
+    .hamburger-menu.w--open .menu-icon {
+    display: none;
+    }
+    .hamburger-menu.w--open .close-icon {
+    opacity: 1;
+    display: flex;
+    }
+    .nav-link:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+    }
+    .nav-menu:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 72px;
+    width: 100%;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.72);
+    }
+    }
+    @media screen and (max-width: 767px) {
+    .nav-menu:after {
+    top: 64px;
+    }
+    pre {
+    padding-left: 15px;
+    }
+    /****** Policy Page Css  *******/
+    .policy-richtext {
+    font-size: 16px;
+    line-height: 24px;
+    }
+    .policy-richtext h1, .policy-richtext h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 20px 0 10px 0;
+    }
+    .policy-richtext h3 {
+    font-size: 22px;
+    line-height: 30px;
+    margin: 10px 0 10px 0;
+    }
+    .policy-richtext h4 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    }
+    .policy-richtext p, .policy-richtext ul {
+    margin: 0px 0 14px 0;
+    }
+    .policy-richtext ul, .policy-richtext ol {
+    padding-left: 20px;
+    margin: 0 0 16px 0;
+    }
+    }
