@@ -207,9 +207,7 @@ html {
     content: "î¤ƒ";
   }
   
-  * {
-    box-sizing: border-box;
-  }
+  
   
   html {
     height: 100%;
@@ -361,15 +359,9 @@ html {
     display: inline-block !important;
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h2, h3, h4, h5, h6 {
     margin-bottom: 10px;
     font-weight: bold;
-  }
-  
-  h1 {
-    margin-top: 20px;
-    font-size: 38px;
-    line-height: 44px;
   }
   
   h2 {
@@ -422,12 +414,6 @@ html {
   figcaption {
     text-align: center;
     margin-top: 5px;
-  }
-  
-  ul, ol {
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding-left: 40px;
   }
   
   .w-list-unstyled {
@@ -2322,47 +2308,7 @@ html {
     display: flex;
   }
   
-  .h1 {
-    font-family: var(--pp-neue-machina);
-    color: var(--white);
-    font-size: var(--heading-1);
-    letter-spacing: 2.4px;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 24px;
-    font-weight: 300;
-    line-height: 128px;
-  }
   
-  .h1.mb18 {
-    margin-bottom: 18px;
-  }
-  
-  .h1.mb56 {
-    margin-bottom: 56px;
-  }
-  
-  .h1.mb64 {
-    margin-bottom: 64px;
-  }
-  
-  .h1.orange-text {
-    color: var(--orange);
-    margin-bottom: 0;
-  }
-  
-  .h1.orange-mid-text {
-    color: var(--mid-orange);
-    margin-bottom: 0;
-  }
-  
-  .h1.orange-lite-text {
-    color: var(--light-orange);
-  }
-  
-  .h1.orange-lite-text.mb32 {
-    margin-bottom: 32px;
-  }
   
   .hero-title {
     color: var(--white);
@@ -6437,7 +6383,7 @@ html {
   
     .h1 {
       font-size: 76px;
-      line-height: 90px;
+      line-height: 78px !important;
     }
   
     .hero-title {
