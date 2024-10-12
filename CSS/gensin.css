@@ -1,0 +1,324 @@
+body {
+    color: red !important;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between !important;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-family: ('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+}
+
+
+main {
+    margin-top: 50px ;
+    display: flex;
+    flex-direction: column;
+    max-width: 1080px;
+    min-width: 940px;
+}
+@media only screen and (max-width: 1920px) {
+    body {
+        background-color: brown !important;
+    }
+    .sub-main {
+        display: flex !important;
+        flex-direction: column !important;
+        aspect-ratio: none;
+    }
+    
+}
+
+@media only screen and (max-width: 1220px) {
+    .circle-2 {
+        display: none !important;
+    }
+}
+.circle-1 {
+    position: absolute;
+    width: auto;
+    height: 500px;
+    aspect-ratio: 1/1;
+    transform: translate(-20%, 52%);
+    z-index: 1;
+    border-radius: 100%;
+    opacity: 50%;
+    background-color: rgb(11, 71, 182);
+}
+
+.circle-2 {
+    position: absolute;
+    width: auto;
+    height: 75%;
+    aspect-ratio: 1/1;
+    transform: translate(170%, -50%);
+    z-index: 2;
+    border-radius: 100%;
+    opacity: 50%;
+    background-color: rgb(11, 71, 182);
+}
+main .banner {
+    width: 100%;
+    height: 320px !important;
+    border-radius: 30px;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+main .banner .container {
+    background: rgb(49,38,246);
+    background: linear-gradient(180deg, rgb(70, 60, 255) 0%, rgb(10, 147, 174) 100%); 
+    min-width: 932px;
+    max-width: 1080px;
+    width: 60%;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* overflow: hidden; */
+}
+
+.container .sub-con-1 {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.container .sub-con-2 {
+    height: 100%;
+}
+
+.container .sub-con-2 .image {
+    height: 110%;
+    width: 100%;
+    transform: translate(0%, -19%);
+}
+
+.container .sub-con-2 .image img {
+    height: inherit;
+    max-width: 250px;
+    min-width: 250px;
+    transition: 0.5s;
+}
+
+.container .sub-con-2 .image img:hover {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+
+.sub-con-1 .text {
+    display: flex;
+    color: white;
+    z-index: 2;
+    margin-left: 105px;
+    font-size: 23px;
+    flex-direction: column;
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+}   
+
+main .sub-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 360px;
+}
+
+main .sub-main .sub {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* main .sub-main .sub .sub-1{
+    aspect-ratio: 1/1
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+
+
+
+
+.footer-container {
+    width: 100%;
+    /* display: none; */
+ 
+}
+/* 
+.footer {
+    position: absolute;     
+    width: 100%;
+    bottom: 0;
+    left: 0;
+} */
+
+.newsletter {
+    display: flex;
+    width: 100%;
+    position: relative;
+    /* display: none; */
+    top: 60px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: rgb(4, 17, 42);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+
+.newsletter-left h2{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    opacity: 0.5;
+    letter-spacing: 1px;
+}
+
+.newsletter-left h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.newsletter-right{
+    width: 500px;
+}
+
+.newsletter-input {
+    background-color: #ffffff;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.newsletter-input input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 80%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 600;
+}
+
+.newsletter-input button  {
+
+    padding: 9px 15px;
+    border: none;
+    border-radius: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: underline;
+    
+}
+
+.newsletter-input button:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    background: rgb(49,38,246);
+    background: linear-gradient(180deg, rgb(54, 43, 252) 0%, rgb(10, 147, 174) 100%); 
+    padding: 100px 40px 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-main {
+    margin: 10px 20px;
+}
+
+.footer p {
+    color: #ffffff;
+}
+
+.footer-main h1 {
+    color: #ffffff;
+    font-size: 1.4rem;
+    line-height: 1.3rem;
+}
+
+.social-links {
+    margin: 15px 0px;
+    display: flex;
+    gap: 8px;
+    transform: translateY(10px);
+
+}
+
+.social-links a {
+    padding: 5px;
+    background-color: #dbd8e3;
+    border-radius: 5px;
+    transition: 0.5s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    opacity: 0.7;
+    transform: translateY(-10px);
+}
+
+.social-links a i {
+    margin: 2px;
+    font-size: 1.1rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 40px 20px;
+}
+.links p {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.links a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #dbd8e3;
+    transition: 0.5s all;
+}
+
+.links a:hover {
+    color: #303035;
+}
+
+@media screen and (max-width: 715px) {
+    .newsletter {
+        flex-direction: column;
+    }
+
+    .newsletter-left {
+        margin-bottom: 10px;
+    }
+
+    .newsletter-right {
+        width: 90%;
+    }
+}
