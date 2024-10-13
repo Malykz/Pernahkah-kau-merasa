@@ -1,0 +1,45 @@
+@keyframes mengambang {
+    0% {
+        transform: rotate(5deg);
+        bottom: 0%;
+        left: -10%;
+    }
+    50% {
+        transform: rotate(365deg);
+        left: 50%;
+        opacity: 100%;
+    }        
+    100% {
+        transform: rotate(730deg);
+        bottom: 0%;
+        left: 90%;
+        opacity: 0%;
+    }
+}
+.div-animasi-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background-color: #007bff;
+    z-index: 1;
+    animation: mengambang 90s linear infinite;
+    filter: blur(10px);
+    opacity: 10%;
+  }
+  .div-animasi-2 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 350px;
+    height: 350px;
+    /* background-color: rgb(10, 92, 174); */
+    z-index: 1;
+    animation: mengambang 31s linear infinite;
+    opacity: 20%;
+    /* filter: blur(10px); */
+    /* opacity: 10%; */
+    border-radius: 10px;
+  }  

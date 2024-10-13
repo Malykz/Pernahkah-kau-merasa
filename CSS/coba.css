@@ -1,5 +1,4 @@
 .sub-main {
-    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
     background-color: #ffffff;
@@ -70,7 +69,20 @@
     padding: 10px;
     margin-bottom: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
 }
+.info .info-item:hover {
+    color: white;
+    transform: translate(3%);
+    user-select: none;
+    background: rgb(200, 219, 255);
+    background: linear-gradient(180deg, rgb(173, 170, 237) 0%, rgb(10, 147, 174) 100%); 
+}
+.info .info-item:active {
+    transform: scale(0.9);
+}
+
+
 .info .info-item img {
     width: 50px;
     height: 50px;
