@@ -20,7 +20,7 @@ main {
     display: flex;
     flex-direction: column;
     max-width: 1080px;
-    min-width: 940px;
+    /* min-width: 940px; */
     height: 1000vh;
 }
 /* @media only screen and (max-width: 1920px) {
@@ -40,6 +40,27 @@ main {
         display: none !important;
     }
 }
+
+@media only screen and (max-width: 960px) {
+    main {
+        width: 100vw;
+    }
+    .black {
+        display: inline !important;
+        /* filter: blur(10px) !important; */
+        background-color: black !important;
+        z-index: 1000000;
+        /* opacity: 10% ; */
+        width: 100000vw;
+        height: 100000vh;
+    }
+}
+
+.black {
+    display: none;
+    position: absolute;
+}
+
 .circle-1 {
     position: absolute;
     width: auto;
@@ -77,7 +98,6 @@ main .banner {
 main .banner .container {
     background: rgb(49,38,246);
     background: linear-gradient(180deg, rgb(70, 60, 255) 0%, rgb(10, 147, 174) 100%); 
-    min-width: 932px;
     max-width: 1080px;
     width: 100%;
     border-radius: 30px;
