@@ -1,3 +1,6 @@
+*{
+    margin: 0;
+}
 .sub-main {
     margin-top: 30px;
     display: grid;
@@ -103,4 +106,125 @@
     cursor: pointer;
 }
 
+.navbar{
+    width: 100%;
+}
 
+.logo {
+    margin-left: 15px;
+}
+
+
+/* .navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+.navbar .logo img {
+    height: 24px;
+    margin-right: 10px;
+}
+.navbar .logo span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+.navbar .logo span span {
+    color: #a0a0a0;
+}
+.navbar .nav-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.navbar .nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 16px;
+}
+.navbar .nav-links a:hover {
+    color: #000;
+}
+.navbar .nav-links .dropdown {
+    position: relative;
+}
+.navbar .nav-links .dropdown::after {
+    content: '\f0d7';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: 5px;
+}
+.navbar .cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #4a4a4a;
+    font-size: 14px;
+    margin-left: 20px;
+} */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+
+  }
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 22px;
+    font-family: Ubuntu;
+  }
+  .navbar a:hover {
+    color: #00bcd4;
+  }
+  .navbar .dropdown {
+    position: relative;
+  }
+  
+  .navbar .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1c1c1c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .navbar .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .navbar .dropdown-content a:hover {
+    background-color: #575757;
+  }
+  .navbar .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: auto;
+    font-family: Concert One;
+  }
