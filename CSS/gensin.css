@@ -145,13 +145,7 @@ main .banner .container {
     font-size: 23px;
     flex-direction: column;
 }
-
-h3 {
-    font-size: 2.5rem;
-    color: white;
-    font-weight: 600;
-    text-align: center;
-}   
+   
 
 /* main .sub-main {
     display: grid;

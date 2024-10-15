@@ -85,7 +85,31 @@
     margin-bottom: 10px;
     margin-left: 2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
 }
+
+.info .info-item:hover {
+    color: white;
+    transform: translate(3%);
+    user-select: none;
+    background: rgb(200, 219, 255);
+    background: linear-gradient(180deg, rgb(173, 170, 237) 0%, rgb(10, 147, 174) 100%)
+
+}
+
+.info .info-item:hover h3 {
+     color: white !important;
+}
+
+.info .info-item:active {
+     transform: scale(0.9); 
+}
+
+.info .info-item h3 {
+     color: black !important; 
+}
+
+
 .info .info-item img {
     width: 50px;
     height: 50px;
