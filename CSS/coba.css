@@ -45,6 +45,7 @@
     text-decoration: none;
     color: #000000;
     margin-top: 10px;
+<<<<<<< HEAD
     transition: 0.3s;
 }
 
@@ -52,6 +53,15 @@
     background-color: black;
     border: 2px solid white;
     color: white;
+=======
+    transition: 0.5s;
+}
+
+.artwork .view-more:hover {
+     background-color: black;
+     border: 2px solid white;
+     color : white;
+>>>>>>> Animasi
 }
 
 .recent-search .search-item {
@@ -101,6 +111,7 @@
     transform: translate(3%);
     user-select: none;
     background: rgb(200, 219, 255);
+<<<<<<< HEAD
     background: linear-gradient(180deg, rgb(173, 170, 237) 0%, rgb(10, 147, 174) 100%); 
 }
 
@@ -114,6 +125,22 @@
 
 .info .info-item h3 {
     color: black !important;
+=======
+    background: linear-gradient(180deg, rgb(173, 170, 237) 0%, rgb(10, 147, 174) 100%)
+
+}
+
+.info .info-item:hover h3 {
+     color: white !important;
+}
+
+.info .info-item:active {
+     transform: scale(0.9); 
+}
+
+.info .info-item h3 {
+     color: black !important; 
+>>>>>>> Animasi
 }
 
 
