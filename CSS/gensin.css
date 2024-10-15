@@ -2,7 +2,6 @@ body {
     background-color: #ececec;
     overflow-x: hidden;
     margin: 0;
-    margin-top: 3rem;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -21,7 +20,7 @@ main {
     flex-direction: column;
     max-width: 1080px;
     /* min-width: 940px; */
-    height: 1000vh;
+    /* height: 1000vh; */
 }
 /* @media only screen and (max-width: 1920px) {
     body {

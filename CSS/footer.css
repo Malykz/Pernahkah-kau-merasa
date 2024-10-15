@@ -20,7 +20,7 @@
     top: 60px;
     max-width: 1000px;
     margin: auto;
-    background-color: rgb(4, 17, 42);
+    background-color: #303035;
     justify-content: space-around;
     align-items: center;
     padding: 20px 15px;
@@ -65,7 +65,7 @@
 }
 
 .newsletter-input button  {
-
+    background-color: #201e1e;
     padding: 9px 15px;
     border: none;
     border-radius: 15px;
@@ -81,8 +81,7 @@
 }
 
 .footer-content {
-    background: rgb(49,38,246);
-    background: linear-gradient(180deg, rgb(54, 43, 252) 0%, rgb(10, 147, 174) 100%); 
+    background: black;
     padding: 100px 40px 40px;
     width: 100%;
     display: flex;
@@ -129,6 +128,7 @@
 .social-links a i {
     margin: 2px;
     font-size: 1.1rem;
+    color: black;
 }
 
 .links {
