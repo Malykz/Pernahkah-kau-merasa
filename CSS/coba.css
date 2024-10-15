@@ -45,7 +45,15 @@
     text-decoration: none;
     color: #000000;
     margin-top: 10px;
+    transition: 0.5s;
 }
+
+.artwork .view-more:hover {
+     background-color: black;
+     border: 2px solid white;
+     color : white;
+}
+
 .recent-search .search-item {
     display: flex;
     align-items: center;
